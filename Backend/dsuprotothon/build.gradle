@@ -2,7 +2,7 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.0.5'
 	id 'io.spring.dependency-management' version '1.1.0'
-	id 'org.asciidoctor.convert' version '2.2.1'
+
 }
 
 group = 'com.dsu.protothon'
@@ -37,7 +37,3 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-tasks.named('asciidoctor') {
-	inputs.dir snippetsDir
-	dependsOn test
-}
