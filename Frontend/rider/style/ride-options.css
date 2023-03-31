@@ -1,0 +1,81 @@
+html{
+    max-width: 1080px;
+    margin: auto;
+    padding-top: 25rem;
+}
+.direct-ride-info-text {
+    font-size: 300%;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.ride-option-list-wrapper {
+    padding: 1%;
+    margin-top: 8px;
+}
+
+.ride-details-wrapper {
+    display: flex;
+    box-shadow: 2px 2px 2px #000000;
+    background: lightgray;
+    margin-top: 20px;
+}
+
+.driver-image-wrapper,
+.car-details-wrapper,
+.price-button-wrapper {flex: 1;}
+
+.driver-avatar {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.service-provider-container {
+    font-size: 400%;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.car-model-container {font-size: 300%;}
+.car-number-container {font-size: 300%;}
+
+.select-ride-radio {
+    scale: 5;
+    margin-top: 20%;
+    margin-left: 50%;
+}
+
+.ride-selected {
+    background: #00ADB5;
+}
+
+.price-text-wrapper {
+    margin-top: 51px;
+    font-size: 400%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.red-font { color: red; }
+
+.split-info {
+    font-size: 200%;
+    background: lightblue;
+    font-weight: bold;
+}
+
+.confirm-text {
+    font-size: 300%;
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+html{
+    max-width: 960px; 
+    margin: auto;
+}

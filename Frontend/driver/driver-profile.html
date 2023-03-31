@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>profile</title>
+
+    <link rel="stylesheet" href="style/common.css" />
+    <link rel="stylesheet" href="style/driver-profile.css" />
+</head>
+<body>
+
+    <div class="header-wrapper">
+        <div class="header"> SARATHI </div>
+        <div class="yellow-line"></div>
+
+        <div class="fact_label">
+            Your current location
+            <br />
+            <br />
+            <p class="fact_data_container">  </p>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+
+        <div class="dp-wrapper" id="dp-wrapper">
+        </div>
+
+        <div class="label-wrapper">
+            <p class="profile-form-label" id="name"> </p>
+        </div>
+
+        <table class="profile-info-tbl" cellpadding="5px" cellspacing="25px">
+
+            <tr>
+                <td class="info-label"> Service Provider </td>
+                <td class="info-data" id="driverRegisteredWith">  </td>
+            </tr>
+
+            <tr>
+                <td class="info-label"> Phone Number </td>
+                <td class="info-data" id="phoneNumber">  </td>
+            </tr>
+
+            <tr>
+                <td class="info-label"> Address </td>
+                <td class="info-data" id="address">  </td>
+            </tr>
+
+            <tr>
+                <td class="info-label"> Registration Number </td>
+                <td class="info-data" id="regNumber">  </td>
+            </tr>
+
+            <tr>
+                <td class="info-label"> Car Model </td>
+                <td class="info-data" id="carModel">  </td>
+            </tr>
+
+            <tr>
+                <td class="info-label"> Car Number </td>
+                <td class="info-data" id="carNumber">  </td>
+            </tr>
+        </table>
+
+        <div class="trip-notification hidden" id="trip-notification">
+            <p class="trip-notification-label"> Pick-up: </p>
+            <p class="trip-notification-info-label" id="pickUpLocation"> </p>
+
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <p class="trip-notification-label"> Drop: </p>
+            <p class="trip-notification-info-label" id="dropLocation"> </p>
+
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <p class="trip-notification-label"> Price: </p>
+            <p class="trip-notification-info-label" id="amount"> </p>
+
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <div class="trip-notification-button-container">
+                <div class="button-wrapper">
+                    <button class="trip-btn accept-btn" onclick="acceptRide()"> Accept </button>
+                </div>
+                <div class="button-wrapper">
+                    <button class="trip-btn decline-btn" onclick="declineRide()"> Decline </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="decline-popup hidden" id="decline-popup">
+            <div class="decline-reason-text" id="price">
+                Price is not justified
+            </div>
+            <div class="decline-reason-text" id="drop-location">
+                I don't want to go to the drop location
+            </div>
+            <div class="decline-reason-text" id="pickup-location">
+                Pick up location is too far
+            </div>
+            <div class="decline-reason-text" id="next-trip">
+                I am worried about getting next trip from drop location
+            </div>
+
+            <button class="decline-popup-btn" onclick="handleDeclineReason()"> Submit </button>
+        </div>
+
+        <div class="emergency-price-popup hidden" id="emergency-price-popup">
+            <div class="emergency-price-popup-label">
+                How much amount are you expecting from the trip?
+            </div>
+
+            <div class="emergency-price-popup-label small-text" id="actual-price-text">
+                Price offered INR 300
+            </div>
+
+            <input type="number" id="custom-price" class="emergency-price-popup-input">
+
+            <button class="decline-popup-btn" onclick="submitEmergencyPrice()"> Submit </button>
+            <br />
+            <br />
+        </div>
+
+        <div class="emergency-price-popup hidden" id="split-ride-option-popup">
+            <div class="emergency-price-popup-label">
+                Where do you want to go towards <span id="towards"></span>
+            </div>
+
+            <input type="text" id="split-point" class="emergency-price-popup-input">
+
+            <button class="decline-popup-btn" onclick="submitSplitPoint()"> Submit </button>
+            <br />
+            <br />
+        </div>
+
+        <div class="trip-notification hidden" id="waiting-screen">
+            <div class="waiting-text">
+                Please wait while we are confirming tour trip...
+            </div>
+        </div>
+ 
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/driver-profile.js"></script>
+</body>
+</html>
