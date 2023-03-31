@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    background: #ffb636;
+    max-height: 100px;
+    min-height: 100px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-size: 500%;
+}
+
+.yellow-line {
+    background: #ffb636;
+    height: 3px;
+    margin-top: 10px;
+}
+
+.page-wrapper {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.big-yellow-button {
+    border: 0;
+    color: white;
+    font-size: 400%;
+    width: 90%;
+    padding: 5px;
+    margin-left: 5%;
+    background: #ffb636;
+    margin-top: 152px;
+}
+
+.wait-screen {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {display: none}
