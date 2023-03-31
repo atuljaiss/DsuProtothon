@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Ride</title>
+
+    <link rel="stylesheet" href="style/common.css" />
+    <link rel="stylesheet" href="style/book-ride.css" />
+</head>
+<body>
+
+    <div class="header-wrapper">
+        <div class="header"> SARATHI </div>
+        <div class="yellow-line"></div>
+    </div>
+
+    <div class="page-wrapper">
+
+        <div class="page-header"> Book Your Ride </div>
+        <div class="booking-form">
+            <p class="booking-form-label"> Pick Up </p>
+            <br />
+            <br />
+            <input class="booking-form-input" id="from" type="text"/>
+            <br />
+            <img src="../img/down-arrow.png" class="arrow-icon"/>
+            <br />
+            <p class="booking-form-label"> Drop </p>
+            <br />
+            <br />
+            <input class="booking-form-input" id="to" type="text"/>
+        </div>
+
+        <div id="map" class="map"></div>
+
+        <button class="big-yellow-button" onclick="bookRide()"> Book Now </button>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=<Enter Your API Key Here>&callback=setUpAutoComplete" async defer></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/book-ride.js"></script>
+
+</body>
+</html>

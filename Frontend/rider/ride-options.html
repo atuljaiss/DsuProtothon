@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Login </title>
+
+    <link rel="stylesheet" href="style/common.css" />
+    <link rel="stylesheet" href="style/waiting.css" />
+    <link rel="stylesheet" href="style/ride-options.css" />
+</head>
+<body>
+
+    <div class="wait-screen" id="wait-screen">
+        <div class="bg"></div>
+
+        <div class="header-wrapper">
+            <div class="header"></div>
+            <div class="yellow-line"></div>
+        </div>
+
+        <div class="page-wrapper">
+
+            <div class="logo-wrapper">
+                <div class="logo-image-wrapper"></div>
+                <img src="../img/logo.png" />
+            </div>
+        </div>
+    </div>
+
+    <div class="header-wrapper">
+        <div class="header"> SARATHI </div>
+        <div class="yellow-line"></div>
+    </div>
+
+    <div class="page-wrapper hidden">
+
+        <div class="direct-ride-info-text">
+            Your Ride Options
+        </div>
+
+        <br />
+        <br />
+
+        <div class="direct-ride-info-text red-font hidden" id="warning-text-custom-price">
+            We could not arrange normal booking. Your booking is changed to custom price booking. Please validate pricing before confirming.
+        </div>
+
+        <div class="direct-ride-info-text red-font hidden" id="warning-text-split">
+            We could not arrange normal booking. Your booking is changed to split booking. Please validate route & pricing before confirming.
+        </div>
+
+        <div id="ride-option-list" class="ride-option-list-wrapper"></div>
+
+        <button onclick="confirmRide()" class="big-yellow-button"> Confirm </button>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/ride-options.js"></script>
+
+</body>
+</html>

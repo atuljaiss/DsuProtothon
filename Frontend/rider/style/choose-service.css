@@ -1,0 +1,26 @@
+html{
+    max-width: 1080px;
+    margin: auto;
+    padding-top: 25rem;
+}
+
+.logo-wrapper {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.choose-service-wrapper {
+    margin-top: 20%;
+    margin-left: 10%; 
+    width: 80%;
+    padding: 10px;
+    font-size: 300%;
+}
+
+.choose-service-checkbox {
+    transform: scale(5);
+}
+
+.big-yellow-button {
+    font-size: 150%;
+}
