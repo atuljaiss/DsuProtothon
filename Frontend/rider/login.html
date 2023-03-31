@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style/common.css" />
+    <link rel="stylesheet" href="style/login.css" />
+</head>
+<body>
+
+    <div class="bg"></div>
+
+    <div class="header-wrapper">
+        <div class="header"></div>
+        <div class="yellow-line"></div>
+    </div>
+
+    <div class="page-wrapper">
+
+        <div class="logo-wrapper">
+            <img src="../img/logo.png" />
+        </div>
+        <div class="login-form">
+            <p class="login-form-label"> Phone Number</p>
+            <br />
+            <br />
+            <input class="login-form-input" id="phone-number" type="text" value="+91 - "/>
+            <button onclick="getOtp()" class="big-yellow-button"> Get OTP </button>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
