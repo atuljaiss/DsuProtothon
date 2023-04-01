@@ -1,5 +1,4 @@
 package com.dsu.protothon.services;
-
 import com.codewarrior.travenjo.model.Rider;
 import com.codewarrior.travenjo.model.request.RiderRegisterRequest;
 import com.codewarrior.travenjo.repository.RiderRepository;
@@ -12,10 +11,6 @@ public class RiderService {
     @Autowired
     private RiderRepository riderRepository;
 
-    public Rider register(RiderRegisterrequest riderRegisterrequest) {
-        return riderRepository.save()
-    }
-
     public Rider register(RiderRegisterRequest riderRegisterRequest) {
         return riderRepository.save(Rider
                 .builder()
@@ -24,6 +19,4 @@ public class RiderService {
                 .build()
         );
     }
-
-
 }
